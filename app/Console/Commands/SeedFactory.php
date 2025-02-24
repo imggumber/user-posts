@@ -2,6 +2,7 @@
 
 namespace App\Console\Commands;
 
+use App\Models\Post;
 use App\Models\User;
 use Illuminate\Console\Command;
 
@@ -29,5 +30,6 @@ class SeedFactory extends Command
     public function handle()
     {
         User::factory()->count(10000)->create();
+        Post::factory(50000)->create();
     }
 }
