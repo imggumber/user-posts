@@ -25,8 +25,7 @@
             if (count($users) > 0) {
                 foreach ($users as $key => $user) {
                     echo $key + 1 . " ";
-                    echo "Name: " . $user['name'];
-                    echo " Post Count: " . $user['posts_count'];
+                    echo "Name: " . $user['name'] . " - " . $user['posts_count'] . " posts";
                     echo "<br>";
                 }
             } else {
